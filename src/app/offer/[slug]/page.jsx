@@ -60,7 +60,7 @@ export default function OfferPage({ params }) {
               onClick={(e) => e.preventDefault()}
               className="rounded-xl bg-coral px-6 py-3 text-center text-sm font-semibold text-white"
             >
-              Get affiliate link (demo)
+              Get affiliate 
             </Link>
             <Link
               href="/partners"

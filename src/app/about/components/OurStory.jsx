@@ -277,7 +277,7 @@ const OurStory = () => {
           className="text-center mb-20 sm:mb-28 lg:mb-36"
         >
           <motion.h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light tracking-wide text-white"
+            className="text-4xl sm:text-5xl lg:text-6xl font-serif font-light tracking-wide text-white"
             initial={{ opacity: 0, y: 40, letterSpacing: "0.3em" }}
             animate={{ opacity: 1, y: 0, letterSpacing: "0.05em" }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -334,8 +334,7 @@ const OurStory = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="group relative px-10 py-4 border border-white/20 cursor-pointer rounded-full text-white text-sm tracking-widest uppercase overflow-hidden transition-colors duration-500 hover:border-white/50">
-              {/* Button background fill animation */}
+            <button  href="/contact"className="group relative px-10 py-4 border border-white/20 cursor-pointer rounded-full text-white text-sm tracking-widest uppercase overflow-hidden transition-colors duration-500 hover:border-white/50">
               <span className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               <span className="relative z-10 group-hover:text-black transition-colors duration-500">
                 Join Our Journey
@@ -354,8 +353,6 @@ const OurStory = () => {
           </motion.p>
         </AnimatedSection>
       </div>
-
-     
     </div>
   );
 };

@@ -5,33 +5,40 @@ export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }
 
-export default function BlogPostPage({ params }) {
-  const post = getBlogPostBySlug(params.slug);
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
   return (
     <main className="pt-24">
-      <div className="mx-auto max-w-3xl px-5 pb-20">
-        <div className="rounded-3xl border border-[rgba(255,255,255,0.10)] bg-[#071b33]/70 p-8 md:p-12">
+      <div className=" px-5 pb-20">
+        <div className="rounded-3xl  bg-[#071b33]/70 p-8 md:p-12">
           <div className="flex flex-wrap items-center gap-3 text-xs text-[rgba(255,255,255,0.68)]">
-            <span className="rounded-full border border-[rgba(255,255,255,0.12)] px-3 py-1">
-              {post.readTime}
-            </span>
+            {post.readTime ? (
+              <span className="rounded-full border border-[rgba(255,255,255,0.12)] px-3 py-1">
+                {post.readTime}
+              </span>
+            ) : null}
             <span>{post.date}</span>
           </div>
 
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-4xl">
             {post.title}
           </h1>
-          <p className="mt-4 text-sm leading-7 text-[rgba(255,255,255,0.76)]">
-            {post.excerpt}
-          </p>
+
+          {post.excerpt ? (
+            <p className="mt-4 text-sm leading-7 text-[rgba(255,255,255,0.76)]">
+              {post.excerpt}
+            </p>
+          ) : null}
 
           <article className="mt-8 space-y-6 text-sm leading-7 text-[rgba(255,255,255,0.78)]">
             {post.content.map((block, idx) => {
               if (block.type === "p") {
                 return <p key={idx}>{block.text}</p>;
               }
+
               if (block.type === "ul") {
                 return (
                   <ul key={idx} className="list-disc space-y-2 pl-6">
@@ -41,6 +48,7 @@ export default function BlogPostPage({ params }) {
                   </ul>
                 );
               }
+
               return null;
             })}
           </article>

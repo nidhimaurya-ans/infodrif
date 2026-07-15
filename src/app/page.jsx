@@ -5,6 +5,7 @@
 import TrustedBy from "../components/TrustedBy";
 import Hero from "../components/Hero";  
 import WorkStretegy from "../components/WorkStretegy";
+import IntegrationsShowcase from "../components/ShowCase";
 
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
 <Hero/>
 <TrustedBy/> 
 <WorkStretegy/>
+<IntegrationsShowcase/>
 
  </>
 

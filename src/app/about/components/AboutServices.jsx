@@ -62,7 +62,7 @@ export const AboutServices = () => {
   ];
 
   return (
-    <section className="py-24 relative">
+    <section className=" py-10 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -74,9 +74,9 @@ export const AboutServices = () => {
         >
           <div className="flex items-center gap-2 mb-4">
             <div className="h-1 w-12 bg-blue-600 rounded-full"></div>
-            <span className="text-blue-400 font-semibold uppercase tracking-wider text-sm">Our Expertise</span>
+            <span className="text-white font-medium uppercase tracking-wider text-sm">Our Expertise</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             We Provide Best <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               AI Consulting

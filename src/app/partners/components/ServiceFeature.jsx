@@ -106,7 +106,8 @@ const featureCards = [
 
 export default function ServiceFeature() {
   return (
-    <div className="max-w-7xl mx-auto px-8 -mt-16 relative z-10">
+    <div className="max-w-7xl mx-auto px-8 -mt-16 relative z-10"> 
+   
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {featureCards.map((card, i) => (
           <motion.div
@@ -121,13 +122,13 @@ export default function ServiceFeature() {
             }}
             className="bg-white rounded-2xl p-6 text-center shadow-xl border border-gray-100 cursor-pointer group transition-all duration-300"
           >
-            <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+            <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform duration-300 text-xl">
               {card.icon}
             </div>
-            <h4 className="font-bold text-gray-800 text-sm mb-2">
+            <h4 className="font-bold text-gray-800 text-sm mb-2 text-xl">
               {card.label}
             </h4>
-            <p className="text-gray-400 text-xs leading-relaxed">
+            <p className="text-gray-400  leading-relaxed text-lg">
               Pelentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum
               dapibus, mauris nec malesuada.
             </p>

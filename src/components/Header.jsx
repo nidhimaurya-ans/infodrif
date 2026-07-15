@@ -8,7 +8,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 const nav = [
   ["Home", "/"],
   ["About", "/about"],
-  ["Partners", "/partners"],
+  ["Services", "/partners"],
   ["Blog", "/blog"],
   ["Contact", "/contact"],
 ];
@@ -34,10 +34,12 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-50 border-b border-[rgba(255,255,255,0.08)] transition-all duration-300 ${
-        scrolled ? "bg-[rgba(7,27,51,0.65)] backdrop-blur" : "bg-transparent"
-      }`}
-    >
+  className={`fixed left-0 right-0 top-0 z-50 border-b border-[rgba(255,255,255,0.08)] transition-all duration-300 ${
+    scrolled
+      ? "bg-[#071b33] shadow-lg"
+      : "bg-transparent"
+  }`}
+>
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <Link
           href="/"
@@ -45,9 +47,9 @@ export default function Header() {
           onClick={() => setOpen(false)}
         >
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-coral text-[13px] font-bold text-white">
-            DH
+            ID
           </span>
-          DailyHnt
+          InfoDrift
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex">
@@ -90,9 +92,9 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <span className="flex items-center gap-3">
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-coral text-[13px] font-bold text-white">
-                  DH
+                  Id
                 </span>
-                <span className="text-sm font-semibold text-white">DailyHnt</span>
+                <span className="text-sm font-semibold text-white">InfoDrift</span>
               </span>
               <button
                 type="button"
@@ -117,9 +119,7 @@ export default function Header() {
               ))}
             </div>
 
-            <p className="mt-8 text-sm leading-6 text-[rgba(255,255,255,0.72)]">
-              Affiliate strategy + partner offers built for performance.
-            </p>
+           
           </div>
         </div>
       )}
