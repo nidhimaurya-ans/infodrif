@@ -115,7 +115,7 @@ export const AboutHero = () => {
             >
               AI Consulting <br />
               That{" "}
-              <span className="bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#FF50A6] to-[#FF8650] bg-clip-text text-transparent">
                 Delivers Results
               </span>
             </motion.h1>
