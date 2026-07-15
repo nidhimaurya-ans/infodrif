@@ -106,7 +106,7 @@ function TeamSection() {
             Team
           </p>
 
-          <h1 className="mt-[20px] text-[48px] font-extrabold leading-[58px] tracking-[-1.5px] text-[#282c32] md:text-[50px]">
+          <h1 className="mt-[20px] text-[48px] font-bold leading-[1.5rem] tracking-[-1.5px] text-[#282c32] md:text-[50px]">
             People at InfoDrif.
           </h1>
 
@@ -165,7 +165,6 @@ export default function TeamMember() {
       <main>
         <TeamSection />
 
-        <div className="h-[52px] bg-[#f0f2f3]" />
       </main>
 
       {/* Back to top button */}
