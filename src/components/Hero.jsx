@@ -118,7 +118,7 @@ useEffect(() => {
 
       
    
-      <main className="relative z-10 top-24 max-w-7xl mx-auto px-6 pt-6 pb-16 lg:pt-14 lg:pb-20">
+      <main className="relative z-10 pt-24 max-w-7xl mx-auto px-6 pt-6 pb-16 lg:pt-14 lg:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column Content Area */}
@@ -234,18 +234,7 @@ useEffect(() => {
               transition={{ type: "spring", stiffness: 60, damping: 20 }}
               className="relative z-10 w-[270px] sm:w-[360px] lg:w-[400px]"
             >
-              {/* <img 
-                src="https://png.pngtree.com/png-clipart/20250222/original/pngtree-deal-with-business-picture-image_3075078.png" 
-                alt="Presenter" 
-                className="w-full h-auto drop-shadow-[0_25px_50px_rgba(59,130,246,0.25)] select-none pointer-events-none"
-              /> */}
-{/* 
-  <img
-            className="anim-hero-zoom-out mx-auto h-full w-full translate-y-4 object-contain opacity-100 sm:translate-y-5"
-            src="/assets/digital-marketing-services.svg"
-            alt=""
-            aria-hidden="true"
-          /> */}
+       
 
  <div className="relative z-10 flex items-center justify-center h-[310px] sm:h-[350px] md:h-[400px] lg:h-[440px]">
   <Image
