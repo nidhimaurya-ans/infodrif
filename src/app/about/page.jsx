@@ -11,13 +11,13 @@ import TeamMember from "./components/TeamMember";
 
 export default function AboutPage() {
   return (
-    <div className="relative">
+    <>
       <AboutHero />
       <AboutSection />
       <AboutServices />
       <OurStory/>
       <TeamMember/>
-    </div>
+</>
   );
 }
 

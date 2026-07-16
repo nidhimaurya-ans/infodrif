@@ -17,6 +17,7 @@ import {
   Award,
   Globe
 } from 'lucide-react';
+import Image from 'next/image';
 
 
 
@@ -100,7 +101,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#030611] text-slate-100 overflow-hidden font-sans select-none">
+    <div className="  bg-[#030611] text-slate-100 overflow-hidden font-sans select-none ">
       
       {/* Dynamic Immersive Background Lighting */}
       <div className="absolute top-5 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
@@ -202,10 +203,15 @@ useEffect(() => {
           </motion.div>
 
           {/* Right Column Interactive Composited Graphics (Mouse Move Parallax Active) */}
-          <div 
+          {/* <div 
           
             className="lg:col-span-6 relative flex items-center justify-center min-h-[500px] lg:min-h-[600px] mt-8 lg:mt-0"
-          >
+          > */}
+<div
+  className="hidden md:flex lg:col-span-6 items-center justify-center relative min-h-[500px] lg:min-h-[600px] mt-8 lg:mt-0"
+>
+
+
             {/* Infinite Dashed Circular Rotating Orbits */}
             <motion.div 
               animate={{ rotate: 360 }}
@@ -228,11 +234,44 @@ useEffect(() => {
               transition={{ type: "spring", stiffness: 60, damping: 20 }}
               className="relative z-10 w-[270px] sm:w-[360px] lg:w-[400px]"
             >
-              <img 
+              {/* <img 
                 src="https://png.pngtree.com/png-clipart/20250222/original/pngtree-deal-with-business-picture-image_3075078.png" 
                 alt="Presenter" 
                 className="w-full h-auto drop-shadow-[0_25px_50px_rgba(59,130,246,0.25)] select-none pointer-events-none"
-              />
+              /> */}
+{/* 
+  <img
+            className="anim-hero-zoom-out mx-auto h-full w-full translate-y-4 object-contain opacity-100 sm:translate-y-5"
+            src="/assets/digital-marketing-services.svg"
+            alt=""
+            aria-hidden="true"
+          /> */}
+
+ <div className="relative z-10 flex items-center justify-center h-[310px] sm:h-[350px] md:h-[400px] lg:h-[440px]">
+  <Image
+    src="/assets/brand.svg"
+    alt="Brand Illustration"
+    width={900}
+    height={900}
+    priority
+    className="
+      w-full
+      max-w-[280px]
+      sm:max-w-[380px]
+      md:max-w-[480px]
+      lg:max-w-[600px]
+      xl:max-w-[680px]
+      h-auto
+      object-contain
+    "
+  />
+</div>
+
+
+
+
+
+
             </motion.div>
 
             {/* FLOATING CARD 1: Voice/Megaphone Badge (Top-Left) */}

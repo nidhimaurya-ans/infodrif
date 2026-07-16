@@ -54,7 +54,7 @@ export default function BlogPage() {
   }, [activeCategory]);
 
   return (
-    <div className="min-h-screen font-sans text-gray-900 pt-24">
+    <div className=" font-sans text-gray-900 pt-24">
       {/* HERO / HEADER */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <motion.h1

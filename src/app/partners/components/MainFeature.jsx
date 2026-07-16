@@ -108,12 +108,7 @@ export default function FeatureRow({
   };
 
   return (
-    // <div
-    //   className={`relative flex flex-col ${
-    //     reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-    //   } items-center gap-8 lg:gap-16 mb-20`}
-    // >
-
+   
 
 <motion.div
   initial={
@@ -130,7 +125,7 @@ export default function FeatureRow({
   transition={{ duration: 0.7 }}
   className={`relative flex flex-col ${
     reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-  } items-center gap-8 lg:gap-16 mb-20`}
+  } items-center gap-6 sm:gap-8 lg:gap-16 mb-14 sm:mb-20`}
 >
 
 
@@ -148,7 +143,7 @@ export default function FeatureRow({
           animate={floatAnim}
           src={image}
           alt={title}
-          className="w-[300px] lg:w-[380px] object-contain drop-shadow-[0_20px_40px_rgba(108,92,231,0.15)]"
+          className="w-[220px] sm:w-[280px] lg:w-[380px] max-w-full object-contain drop-shadow-[0_20px_40px_rgba(108,92,231,0.15)]"
         />
       </motion.div>
 
@@ -183,7 +178,7 @@ export default function FeatureRow({
             <span className="absolute w-10 h-10 rounded-full bg-[#6d5cc4]/20 animate-ping"></span>
           </motion.div> */}
 
-          <h3 className="text-[22px] font-bold text-[#1a1c2e]">
+          <h3 className="text-[18px] sm:text-[20px] lg:text-[22px] font-bold text-[#1a1c2e]">
             {title}
           </h3>
         </div>
@@ -191,7 +186,7 @@ export default function FeatureRow({
        
         
 <p
-  className={`text-[16px] leading-[1.5] text-gray-500 max-w-[420px] ${
+  className={`text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.5] text-gray-500 max-w-[420px] px-2 sm:px-0 ${
     reverse ? "mx-auto lg:mx-0" : "mx-auto lg:mx-0"
   }`}
 >

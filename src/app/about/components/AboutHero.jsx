@@ -11,6 +11,7 @@ import {
   Brain,
   TrendingUp,
 } from "lucide-react";
+import Image from "next/image";
 
 const CountUp = ({ end, suffix = "", className = "" }) => {
   const nodeRef = useRef(null);
@@ -87,7 +88,7 @@ export const AboutHero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0a0a0f] pt-20">
+    <section className="relative  flex items-center overflow-hidden bg-[#0a0a0f] pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(at_top_right,#4f46e510_0%,transparent_50%)]" />
       <div className="absolute top-20 -right-40 w-[700px] h-[700px] bg-gradient-to-br from-violet-600/10 to-indigo-600/10 rounded-full blur-3xl" />
@@ -251,6 +252,73 @@ export const AboutHero = () => {
               </div>
             </motion.div>
           </motion.div> */}
+
+
+
+
+ <motion.div
+            initial={{ opacity: 0, scale: 0.92, y: 30 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-5 relative"
+          >
+         <div className="relative z-10 flex items-center justify-center h-[310px] sm:h-[350px] md:h-[400px] lg:h-[440px]">
+  <Image
+    src="/assets/brand.svg"
+    alt="Brand Illustration"
+    width={900}
+    height={900}
+    priority
+    className="
+      w-full
+      max-w-[280px]
+      sm:max-w-[380px]
+      md:max-w-[480px]
+      lg:max-w-[600px]
+      xl:max-w-[680px]
+      h-auto
+      object-contain
+    "
+  />
+</div>
+           
+
+{/* <div className="relative z-10 h-[310px] overflow-visible sm:h-[350px] md:h-[400px] lg:h-[440px] xl:hidden">
+          <img
+            className=" mx-auto h-full w-full translate-y-4 object-contain opacity-100 sm:translate-y-5"
+            src="./assets/brand.mp4"
+            alt=""
+            aria-hidden="true"
+          />
+        </div> */}
+
+
+
+
+
+
+
+
+
+            {/* <motion.div
+              animate={{ y: [-10, 10, -10] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -bottom-6 -left-6 bg-gradient-to-br from-white to-slate-100 text-gray-900 px-6 py-4 rounded-3xl shadow-2xl flex items-center gap-4"
+            >
+              <div className="text-4xl">🏆</div>
+              <div>
+                <div className="font-semibold">Gartner Recognized</div>
+                <div className="text-sm text-emerald-600">
+                  Leader in AI Consulting 2026
+                </div>
+              </div>
+            </motion.div> */}
+          </motion.div> 
+
+
+
+
+
         </div>
 
         <motion.div

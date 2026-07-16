@@ -159,7 +159,7 @@ function TeamSection() {
 
 export default function TeamMember() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className=" bg-white font-sans">
       
 
       <main>

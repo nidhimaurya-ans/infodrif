@@ -22,9 +22,9 @@ export default function TrustedBy() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="z-20 relative"
+          className=""
         >
-          <div className="bg-[#090e1a]/50 backdrop-blur-md rounded-2xl p-8 border border-white/5 shadow-2xl">
+          <div className="  p-8 ">
        
             <p className="text-slate-400 font-semibold text-sm text-center mb-6">
               Trusted by more than <span className="text-blue-400 font-bold">100+</span> companies

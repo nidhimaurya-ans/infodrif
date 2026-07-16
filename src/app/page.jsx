@@ -13,8 +13,11 @@ export default function HomePage() {
 
  <>
 <Hero/>
-<TrustedBy/> 
-<WorkStretegy/>
+
+  <TrustedBy/> 
+
+
+  <WorkStretegy/>
 <IntegrationsShowcase/>
 
  </>

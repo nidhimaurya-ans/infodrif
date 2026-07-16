@@ -262,7 +262,7 @@ const FloatingParticles = () => {
 // ─── Main OurStory Component ──────────────────────────────────────────
 const OurStory = () => {
   return (
-    <div className="min-h-screen  bg-blue-500/10  text-white relative overflow-hidden">
+    <div className="  bg-blue-500/10  text-white relative overflow-hidden">
       {/* Floating background particles */}
       <FloatingParticles />
 
