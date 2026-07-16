@@ -13,7 +13,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "DailyHnt - Affiliate Marketing",
+  title: "InfoDrif - Affiliate Marketing",
   description: "Affiliate marketing & partner programs demo",
 };
 
@@ -28,4 +28,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
