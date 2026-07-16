@@ -143,133 +143,32 @@ export const AboutHero = () => {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </motion.button> */}
 
-
-
-               <motion.button 
-                          
-                            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
-                          >
-                            <a href="/contact" className="w-full sm:w-auto text-center font-bold text-[15px] text-white px-8 py-4 rounded-xl bg-gradient-to-r from-[#6256FF] via-[#B642FF] to-[#FF7356] hover:shadow-[0_8px_30px_rgba(98,86,255,0.4)] transition-all duration-300 transform hover:-translate-y-0.5">
-                              Get Strategy <ArrowRight className="inline-block w-4 h-4 ml-1" />
-                            </a>
-                            
-                          </motion.button>
+              <motion.button className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                <a
+                  href="/contact"
+                  className="w-full sm:w-auto text-center font-bold text-[15px] text-white px-8 py-4 rounded-xl bg-gradient-to-r from-[#6256FF] via-[#B642FF] to-[#FF7356] hover:shadow-[0_8px_30px_rgba(98,86,255,0.4)] transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  Get Strategy{" "}
+                  <ArrowRight className="inline-block w-4 h-4 ml-1" />
+                </a>
+              </motion.button>
             </motion.div>
           </motion.div>
 
-          {/* Right Visual - Advanced AI Dashboard */}
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, scale: 0.92, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative rounded-[2.75rem] overflow-hidden border border-white/10 shadow-2xl bg-[#0f1420] aspect-[4/3.1] backdrop-blur-2xl">
-         
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:40px_40px]" />
-
-       
-              <div className="absolute inset-0 p-8 flex flex-col">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <div className="text-emerald-400 text-sm font-mono flex items-center gap-2">
-                      <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-                      LIVE AI ORCHESTRATION
-                    </div>
-                    <h3 className="text-white text-2xl font-semibold mt-2">
-                      Enterprise Intelligence Platform
-                    </h3>
-                  </div>
-                  <Brain className="w-12 h-12 text-violet-400/80" />
-                </div>
-
-                <div className="mt-auto space-y-6">
-                  
-                  <motion.div
-                    initial={{ x: 60, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.4 }}
-                    className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 shadow-2xl"
-                  >
-                    <div className="flex justify-between items-center">
-                      <div>
-                        <div className="text-xs text-slate-400">
-                          PROJECTED ROI
-                        </div>
-                        <div className="text-4xl font-semibold text-white mt-1">
-                          +184%
-                        </div>
-                      </div>
-                      <TrendingUp className="w-10 h-10 text-emerald-400" />
-                    </div>
-                  </motion.div>
-
-            
-                  <motion.div
-                    initial={{ x: -60, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.7 }}
-                    className="ml-auto w-4/5 bg-gradient-to-br from-violet-500/10 to-indigo-500/10 border border-violet-400/20 backdrop-blur-2xl rounded-3xl p-5 shadow-2xl"
-                  >
-                    <div className="text-xs uppercase tracking-widest text-violet-300 mb-3">
-                      Model Performance
-                    </div>
-                    <div className="h-2.5 bg-white/10 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: "65%" }}
-                        animate={{ width: "92%" }}
-                        transition={{ duration: 2.2, delay: 1 }}
-                        className="h-full bg-gradient-to-r from-violet-400 to-cyan-400 rounded-full"
-                      />
-                    </div>
-                    <div className="flex justify-between text-[10px] text-slate-400 mt-2">
-                      <span>Current</span>
-                      <span className="text-emerald-400">92.4% Accuracy</span>
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-
-           
-              <div className="absolute top-12 right-12 w-5 h-5 border border-cyan-400/40 rounded-full flex items-center justify-center">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
-              </div>
-              <div className="absolute bottom-20 left-16 w-3 h-3 bg-violet-400 rounded-full animate-pulse" />
-            </div>
-
-           
-            <motion.div
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 bg-gradient-to-br from-white to-slate-100 text-gray-900 px-6 py-4 rounded-3xl shadow-2xl flex items-center gap-4"
-            >
-              <div className="text-4xl">🏆</div>
-              <div>
-                <div className="font-semibold">Gartner Recognized</div>
-                <div className="text-sm text-emerald-600">
-                  Leader in AI Consulting 2026
-                </div>
-              </div>
-            </motion.div>
-          </motion.div> */}
-
-
-
-
- <motion.div
-            initial={{ opacity: 0, scale: 0.92, y: 30 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 relative"
-          >
-         <div className="relative z-10 flex items-center justify-center h-[310px] sm:h-[350px] md:h-[400px] lg:h-[440px]">
-  <Image
-    src="/assets/brand.svg"
-    alt="Brand Illustration"
-    width={900}
-    height={900}
-    priority
-    className="
+            <div className="relative z-10 flex items-center justify-center h-[310px] sm:h-[350px] md:h-[400px] lg:h-[440px]">
+              <Image
+                src="/assets/about1.png"
+                alt="Brand Illustration"
+                width={900}
+                height={900}
+                priority
+                className="
       w-full
       max-w-[280px]
       sm:max-w-[380px]
@@ -279,46 +178,9 @@ export const AboutHero = () => {
       h-auto
       object-contain
     "
-  />
-</div>
-           
-
-{/* <div className="relative z-10 h-[310px] overflow-visible sm:h-[350px] md:h-[400px] lg:h-[440px] xl:hidden">
-          <img
-            className=" mx-auto h-full w-full translate-y-4 object-contain opacity-100 sm:translate-y-5"
-            src="./assets/brand.mp4"
-            alt=""
-            aria-hidden="true"
-          />
-        </div> */}
-
-
-
-
-
-
-
-
-
-            {/* <motion.div
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 bg-gradient-to-br from-white to-slate-100 text-gray-900 px-6 py-4 rounded-3xl shadow-2xl flex items-center gap-4"
-            >
-              <div className="text-4xl">🏆</div>
-              <div>
-                <div className="font-semibold">Gartner Recognized</div>
-                <div className="text-sm text-emerald-600">
-                  Leader in AI Consulting 2026
-                </div>
-              </div>
-            </motion.div> */}
-          </motion.div> 
-
-
-
-
-
+              />
+            </div>
+          </motion.div>
         </div>
 
         <motion.div

@@ -249,7 +249,7 @@ useEffect(() => {
 
  <div className="relative z-10 flex items-center justify-center h-[310px] sm:h-[350px] md:h-[400px] lg:h-[440px]">
   <Image
-    src="/assets/brand.svg"
+    src="/assets/Hero.svg"
     alt="Brand Illustration"
     width={900}
     height={900}
